@@ -1,0 +1,145 @@
+:root{
+    --main-blue:hsl(246, 80%, 60%);
+
+    --headline-red: hsl(348, 100%, 68%);
+    --headline-orange: hsl(15, 100%, 70%);
+    --headline-teal: hsl(195, 74%, 62%);
+    --headline-green:hsl(145, 58%, 55%);
+    --headline-purple:hsl(264, 64%, 52%);
+    --headline-yellow:hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    --main-border-radius: 20px;
+}
+/* ###########################################*/
+/*                    GLOBAL                  */
+/* ###########################################*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    color: var(--Desaturated-blue);
+}
+
+body, html{
+    height: 100vh;
+}
+a,p{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+a:hover{
+    color: white;
+}
+/* ###########################################*/
+/*                    MAIN                    */
+/* ###########################################*/
+body{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1.2fr repeat(6,1fr) 0.1fr;
+    grid-template-areas: 
+        "main" 
+        "Work" 
+        "Play" 
+        "Study"
+        "Exercise" 
+        "Social" 
+        "SelfCare"
+        "footer";
+    gap: 2%; 
+    padding:80px 30px; 
+    background-color: var(--Very-dark-blue);
+}
+
+
+
+main{
+    display: flex;
+    grid-area: main;
+    background-color: var(--Dark-blue);
+    flex-direction: column;
+    border-radius: var(--main-border-radius);
+
+}
+#hero{
+    display: flex;
+    padding: 30px;
+    background-color: var(--main-blue);
+    border-radius: var(--main-border-radius);
+    justify-content: space-between;
+    
+}
+#hero *{
+    color: var(--Pale-Blue);
+}
+#hero h1{
+    font-weight: 300;
+}
+
+#hero p{
+    font-size:16px;
+}
+#hero img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 25%;
+}
+
+#timePeriod{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+#Work{
+    grid-area: Work;
+
+}
+
+#Play{
+    grid-area: Play;
+}
+
+#Study{
+    grid-area: Study;
+}
+
+#Exercise{
+    grid-area: Exercise;
+
+}
+
+#Social{
+    grid-area: Social;
+}
+
+#SelfCare{
+    grid-area: SelfCare;
+}
+footer{
+    grid-area: footer;
+}
+footer *{
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 769px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.1fr;
+        grid-template-areas: 
+            "main Work Play Study"
+            "main Exercise Social SelfCare"
+            "footer footer footer footer";
+        gap: 2%;  
+    }
+}
