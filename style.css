@@ -23,7 +23,9 @@
     box-sizing: border-box;
     color: var(--Desaturated-blue);
 }
-
+.hidden{
+    display: none;
+}
 body{
     background-color: var(--Very-dark-blue);
     width: 100vw;
@@ -40,6 +42,31 @@ body{
     gap: 1rem;
     padding: 5%;
 }
+#header{
+    grid-area: header;
+}
+#work{
+    grid-area: work;
+}
+#play{
+    grid-area: play;
+}
+#study{
+    grid-area: study;
+}
+#exercise{
+    grid-area: exercise;
+}
+#social{
+    grid-area: social;
+}
+#self-care{
+    grid-area: self-care;
+}
+#attribution{
+    grid-area:attribution;
+}
+
 /* HEADER CARD */
 main{
     background-color: var(--Dark-blue);
@@ -94,30 +121,8 @@ main{
    color: var(--Pale-Blue);
    cursor: pointer;
 }
-#header{
-    grid-area: header;
-}
-#work{
-    grid-area: work;
-}
-#play{
-    grid-area: play;
-}
-#study{
-    grid-area: study;
-}
-#exercise{
-    grid-area: exercise;
-}
-#social{
-    grid-area: social;
-}
-#self-care{
-    grid-area: self-care;
-}
-#attribution{
-    grid-area:attribution;
-}
+/* ACTIVITIES CARDS */
+
 @media screen and (min-width: 30em) {
     body{
         grid-template-areas:
