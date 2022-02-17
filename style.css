@@ -24,9 +24,7 @@
     box-sizing: border-box;
     color: var(--Desaturated-blue);
 }
-.hidden{
-    display: none;
-}
+
 body{
     background-color: var(--Very-dark-blue);
     width: 100vw;
@@ -48,21 +46,33 @@ body{
 }
 #work{
     grid-area: work;
+    background-color: var(--headline-orange);
+    background-image: url(./images/icon-work.svg);
 }
 #play{
     grid-area: play;
+    background-color: var(--headline-teal);
+    background-image: url(./images/icon-play.svg);
 }
 #study{
     grid-area: study;
+    background-color: var(--headline-red);
+    background-image: url(./images/icon-study.svg);
 }
 #exercise{
     grid-area: exercise;
+    background-color: var(--headline-green);
+    background-image: url(./images/icon-exercise.svg);
 }
 #social{
     grid-area: social;
+    background-color: var(--headline-purple);
+    background-image: url(./images/icon-social.svg);
 }
 #self-care{
     grid-area: self-care;
+    background-color: var(--headline-yellow);
+    background-image: url(./images/icon-self-care.svg);
 }
 #attribution{
     grid-area:attribution;
@@ -131,15 +141,12 @@ main{
 
 
 /* ACTIVITIES CARDS */
-#work{
-    background-color: var(--headline-orange);
-    background-image: url(./images/icon-work.svg);
-}
+
 
 .card{
     display: flex;
     flex-direction: column;
-    background-position: 90% -15% ;
+    background-position: 90% -3% ;
     background-repeat: no-repeat;
     height: 12rem;
     justify-content: flex-end;
@@ -160,6 +167,7 @@ main{
     'type options'
     'time last-time';
     padding: 5% 10%;
+    gap: 0 1rem;
 }
 
 
@@ -193,6 +201,9 @@ main{
     color: var(--Pale-Blue);
     font-weight: 400;
     font-size: 1.2rem;
+}
+.hidden{
+    display: none;
 }
 @media screen and (min-width: 30em) {
     body{
