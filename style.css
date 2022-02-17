@@ -232,7 +232,7 @@ main{
         grid-auto-rows: minmax(13rem, 18rem) minmax(13rem, 18rem) 0.1fr;
         place-content: center;
     }
-    /* 250x230 */
+    
     main{
         height: auto;
     }
